@@ -19,5 +19,15 @@ return
             'name' => 'app',
             'path' => __DIR__ . '/../log/app.log',
         ],
+
+        // mysql settings
+        'mysql' => [
+            'host' => getenv('DATABASE_HOST'),
+            'user' => getenv('DATABASE_USER'),
+            'passwd' => getenv('DATABASE_PASSWORD'),
+            'dbname' => getenv('DATABASE_NAME'),
+            'port'   => (int) getenv('DATABASE_PORT')
+
+        ],
     ],
 ];
